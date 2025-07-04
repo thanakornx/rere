@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จัดการคำสั่งซื้อ</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>จัดการคำสั่งซื้อ</h1>
+        <p>บริหารจัดการคำสั่งซื้อของคุณอย่างมีประสิทธิภาพ</p>
+    </header>
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="customers.html">ลูกค้า</a>
+        <a href="orders.html" class="active">คำสั่งซื้อ</a>
+        <a href="products.html">สินค้า</a>
+        <a href="reports.html">รายงาน</a>
+        <a href="about.html">เกี่ยวกับ</a>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h2>รายการคำสั่งซื้อ</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Product</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Order ID">001</td>
+                        <td data-label="Customer Name">John Doe</td>
+                        <td data-label="Product">Product A</td>
+                        <td data-label="Status">Shipped</td>
+                        <td data-label="Actions"><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Order ID">002</td>
+                        <td data-label="Customer Name">Jane Smith</td>
+                        <td data-label="Product">Product B</td>
+                        <td data-label="Status">Pending</td>
+                        <td data-label="Actions"><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card">
+            <h2>อัปเดตสถานะคำสั่งซื้อ</h2>
+            <form id="updateOrderForm">
+                <label
